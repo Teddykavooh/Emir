@@ -58,3 +58,25 @@
 		transition: .3s;
 	}
 }
+
+.flex_conts {
+	margin: auto;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+}
+.flex_comp {
+	display: flex;
+	flex-direction: row;
+	background-color: aliceblue;
+	padding: 5vh;
+	height: auto;
+}
+.the_content {
+	flex: 70%;
+}
+.the_img img {
+	height: 25vh;
+	width: 20vw;
+}
