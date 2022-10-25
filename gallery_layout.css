@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth; 
+}
+
 .gallery {
 	display: flex;
 	padding: 50px;
@@ -60,21 +64,32 @@
 }
 
 .flex_conts {
-	margin: auto;
-	width: 70%;
+	margin: 30px;
 	display: flex;
 	flex-direction: column;
 	padding: 50px;
+	background-color: aliceblue;
+}
+.flex_conts h6 {
+	color: black;
+}
+.flex_conts ul {
+	list-style: square;
 }
 .flex_comp {
+	margin: auto;
+	width: 70%;
 	display: flex;
 	flex-direction: row;
-	background-color: aliceblue;
 	padding: 5vh;
 	height: auto;
 }
 .the_content {
 	flex: 70%;
+}
+.the_img {
+	width: 30%;
+	margin: auto;
 }
 .the_img img {
 	height: 25vh;
