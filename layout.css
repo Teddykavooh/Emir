@@ -22,7 +22,14 @@
 	flex-direction: row;
 }
 #header #logo *{margin:auto; padding:5px; line-height:1;}
-#header #logo h1{font-size:22px; margin: auto;}
+#header #logo h1{
+	font-size:22px; 
+	margin: auto;
+	background: linear-gradient(to right, #003399, #FED104, #FFFFFF);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent
+}
 #header #logo img{
 	margin: auto;
 	background-color: white;
