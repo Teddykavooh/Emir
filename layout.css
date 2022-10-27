@@ -21,7 +21,7 @@
 	display: flex;
 	flex-direction: row;
 }
-#header #logo *{margin:0; padding:5px; line-height:1;}
+#header #logo *{margin:auto; padding:5px; line-height:1;}
 #header #logo h1{font-size:22px; margin: auto;}
 #header #logo img{
 	margin: auto;
@@ -154,7 +154,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
 #mainav form select{width:100%; padding:5px; border:none;}
 #mainav form select option{margin:5px; padding:0; border:none;}
-
+Wrappe
 /* Breadcrumb */
 #breadcrumb{padding:150px 0 30px;}
 #breadcrumb ul{margin:0 0 30px 0; padding:0; list-style:none; text-transform:uppercase;}
@@ -222,7 +222,7 @@ label span{color:#FF0000; background-color:inherit;}
 input:focus, textarea:focus, *:required:focus{border-color:#57ADC4;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
-.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.20);}
 .overlay.light{color:#141414;}
 .overlay.light::after{background-color:rgba(255,255,255,.8);}
 .overlay.coloured::after{}
