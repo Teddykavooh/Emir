@@ -45,7 +45,7 @@
   margin-top: 10px;
   margin-bottom: 28px;
   height: 80vh;
-  width: 100%;
+  max-width: 1600px;
   position: relative; }
 
 .mySlides {
