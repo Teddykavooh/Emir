@@ -125,6 +125,28 @@
   to {
     opacity: 1; } }
 
+.slider_desc {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 30%;
+  height: 30%;
+  background-color: black;
+  opacity: 75%;
+  padding: 1rem;
+  overflow: scroll; }
+
+.slider_desc h6 {
+  font-size: 2.5vh;
+  background: linear-gradient(to right, #003399, #FED104, #FFFFFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.slider_desc p {
+  color: #FFFFFF;
+  font-size: 2vh; }
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next, .text {
