@@ -10,4 +10,4 @@
   * ``Initialize sass - `npm run sass` ``
 
 * ***NOTE:***
-  * Currently, only affects the gallery page.
+  * Currently, only affects the carousel-slider and gallery page.
