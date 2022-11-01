@@ -10,7 +10,7 @@
 .slideshow-container {
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 28px;
+    margin-bottom: 1.5rem;
     height: 80vh;
     max-width: 1600px;
     position: relative;
@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     display: none;
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
   }
 
   .mySlides img {
@@ -77,6 +77,9 @@
   }
 
   /* The dots/bullets/indicators */
+  .dots {
+    text-align: center;
+  }
   .dot {
     cursor: pointer;
     height: 1vh;
