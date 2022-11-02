@@ -1,3 +1,4 @@
+document.getElementById("cont_form").addEventListener("submit",sendEmail);
 function sendEmail() {
     let c_name = document.getElementById('customerName').value
     let c_mail = document.getElementById('customerEmail').value
@@ -13,7 +14,7 @@ function sendEmail() {
                     To: 'receiver@email_address.com',
                     From: c_mail,
                     Subject: "Contact Related",
-                    Body: c_message,
+                    Body: c_phone +"\n"+ c_message,
                 })
                 .then(function (message) {
                     alert("mail sent successfully")
@@ -23,4 +24,28 @@ function sendEmail() {
     } else {
         alert("Some details are missing!")
     }
+  }
+
+  document.getElementById("greet_form").addEventListener("submit",sendGreetEmail);
+  function sendGreetEmail() {
+    let g_name = document.getElementById('g_name').value
+    let g_mail = document.getElementById('g_mail').value
+    if (g_name != "") {
+        if (g_mail != "") {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "sender@email_address.com",
+                Password: "Enter your password",
+                To: 'receiver@email_address.com',
+                From: g_mail,
+                Subject: "Greeting!!!",
+                Body: g_name + " just said Hi!",
+            })
+            .then(function (message) {
+                alert("Greeting sent successfully")
+            });
+        }
+    } else {
+            alert("Some details are missing!")
+        }
   }

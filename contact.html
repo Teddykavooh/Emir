@@ -7,7 +7,7 @@
     <link rel="icon" href="./images/logo_O.png" type="image/icon type">
     <title>Emir Travel Agency</title>
     <link href="./layout.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/style.css" type="text/css" media="all">
 </head>
 <body>
     <div class="wrapper row1">
@@ -53,7 +53,7 @@
     </div>
     <div class="c_body">
         <div class="contact-us">
-            <form method="post">
+            <form id="cont_form">
                 <label for="customerName">NAME <em>&#x2a;</em></label>
                 <input id="customerName" name="customerName" required="" type="text" />
                 <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
@@ -69,47 +69,47 @@
                 </h3>
                 <!-- <label for="spamProtection">SPAM PROTECTION <em>&#x2a; </em><span>&nbsp;&nbsp;&nbsp;&nbsp;What day comes before July 11th?</span></label>
                 <input id="spamProtection" name="spamProtection" type="text" /> -->
-                <button id="customerOrder" value="Send Email" onclick="sendEmail()">SUBMIT</button>
+                <button id="customerOrder" value="Send Email" type="submit">SUBMIT</button>
             </form>
         </div>
     </div>
     <div class="wrapper row4">
-        <footer id="footer" class="hoc clear"> 
-          <div class="one_half first">
-            <h6 class="heading">Contacts:</h6>
-            <p class="btmspace-30">Reach out to us;</p>
-            <ul class="nospace linklist contact">
-              <li><i class="fa fa-map-marker"></i>
-                <address>
-                  Luthuli Avenue &amp; Nairobi, 56168-00200
-                </address>
-              </li>
-              <li><i class="fa fa-phone"></i> +00 (123) 456 7890(Sample)</li>
-              <li><i class="fa fa-envelope-o"></i>info@EMIR TRAVEL AGENCY.co.ke</li>
-            </ul>
-          </div>
-          <div class="one_quarter">
-            <h6 class="heading">More links;</h6>
-            <ul class="nospace linklist">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Experience</a></li>
-            </ul>
-          </div>
-          <div class="one_quarter">
-            <h6 class="heading">Join Us</h6>
-            <p class="nospace btmspace-15">Submit your details;</p>
-            <form method="post" action="#">
-              <fieldset>
-                <legend>Newsletter:</legend>
-                <input class="btmspace-15" type="text" value="" placeholder="Name">
-                <input class="btmspace-15" type="text" value="" placeholder="Email">
-                <button type="submit" value="submit">Submit</button>
-              </fieldset>
-            </form>
-          </div>
-        </footer>
+      <footer id="footer" class="hoc clear">
+        <div class="one_half first">
+          <h6 class="heading">Contacts:</h6>
+          <p class="btmspace-30">Reach out to us;</p>
+          <ul class="nospace linklist contact">
+            <li><i class="fa fa-map-marker"></i>
+              <address>
+                Luthuli Avenue, Nairobi-Kenya
+              </address>
+            </li>
+            <li><i class="fa fa-phone"></i> +00 (123) 456 7890(Sample)</li>
+            <li><i class="fa fa-envelope-o"></i><a href="./contact.html">www.EMIR TRAVEL AGENCY.co.ke</a> or P.O.Box 56168-00200</li>
+          </ul>
+        </div>
+        <div class="one_quarter">
+          <h6 class="heading">More links:</h6>
+          <ul class="nospace linklist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Experience</a></li>
+          </ul>
+        </div>
+        <div class="one_quarter">
+          <h6 class="heading">Greet Us:</h6>
+          <p class="nospace btmspace-15">Submit your details;</p>
+          <form id="greet_form" action="#">
+            <fieldset>
+              <legend>Newsletter:</legend>
+              <input class="btmspace-15" type="text" value="" placeholder="Name" id="g_name">
+              <input class="btmspace-15" type="text" value="" placeholder="Email" id="g_mail">
+              <button type="submit" value="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </footer>
     </div>
     <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
     <!-- JAVASCRIPTS -->
