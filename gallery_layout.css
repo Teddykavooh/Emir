@@ -33,3 +33,10 @@ html {
 	height: 25vh;
 	width: 20vw;
 }
+
+#more {
+	display: none;
+}
+#more2 {
+	display: none;
+}
