@@ -17,7 +17,7 @@ function sendEmail() {
                     Body: c_phone +"\n"+ c_message,
                 })
                 .then(function (message) {
-                    alert("mail sent successfully");
+                    alert("Mail sent successfully");
                 });
             }
         }
