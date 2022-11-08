@@ -6,7 +6,7 @@ function sendEmail() {
     let c_message = document.getElementById('customerNote').value;
     if (c_name != "") {
         if (c_mail != "") {
-            if (c_message != "") {
+            if ((c_mail != "") && (ValidateEmail(c_mail))) {
                 Email.send({
                     Host: "smtp.gmail.com",
                     Username: "sender@email_address.com",
@@ -31,7 +31,7 @@ function sendEmail() {
     let g_name = document.getElementById('g_name').value;
     let g_mail = document.getElementById('g_mail').value;
     if (g_name != "") {
-        if (g_mail != "") {
+        if ((g_mail != "") && (ValidateEmail(g_mail))) {
             Email.send({
                 Host: "smtp.gmail.com",
                 Username: "sender@email_address.com",
@@ -48,4 +48,28 @@ function sendEmail() {
     } else {
             alert("Some details are missing!");
         }
+  }
+
+  function ValidateEmail(input) {
+
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+    if (input.value.match(validRegex)) {
+  
+    //   alert("Valid email address!");
+  
+    //   document.form1.text1.focus();
+  
+      return true;
+  
+    } else {
+  
+    //   alert("Invalid email address!");
+  
+    //   document.form1.text1.focus();
+  
+      return false;
+  
+    }
+  
   }
