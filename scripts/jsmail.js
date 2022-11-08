@@ -22,7 +22,7 @@ function sendEmail() {
             }
         }
     } else {
-        alert("Some details are missing!")
+        alert("Some details are missing!");
     }
   }
 
