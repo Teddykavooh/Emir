@@ -11,7 +11,7 @@
     margin: auto;
     margin-top: 10px;
     margin-bottom: 1.5rem;
-    max-height: 80vh;
+    height: 80vh;
     max-width: 1600px;
     position: relative;
   }
@@ -138,4 +138,21 @@
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
     .prev, .next, .text {font-size: 11px}
+  }
+
+  @media only screen and (max-width: 500px) {
+    .slideshow-container {
+      height: 40vh;
+    }
+    .slider_desc h6 {
+      font-size: 1.5vh;
+    }
+    .slider_desc p {
+      font-size: 1.2vh;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .slideshow-container {
+      height: 30vh;
+    }
   }

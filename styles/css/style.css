@@ -155,6 +155,18 @@
   .prev, .next, .text {
     font-size: 11px; } }
 
+@media only screen and (max-width: 500px) {
+  .slideshow-container {
+    height: 40vh; }
+  .slider_desc h6 {
+    font-size: 1.5vh; }
+  .slider_desc p {
+    font-size: 1.2vh; } }
+
+@media only screen and (max-width: 450px) {
+  .slideshow-container {
+    height: 30vh; } }
+
 .c_body {
   display: grid;
   align-items: center;
