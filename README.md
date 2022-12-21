@@ -11,3 +11,6 @@
 
 * ***NOTE:***
   * Currently, only affects the carousel-slider, contact and gallery pages.
+
+* Site link:
+  * *[Emir Travel Agency](https://teddykavooh.github.io/Emir/)*
